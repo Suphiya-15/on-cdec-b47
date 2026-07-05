@@ -1,0 +1,10 @@
+
+
+                                Load Balancer
+                                    -----> ELB in AWS
+
+Differences between AWS and GCP LB:
+1. Architecture
+   -- AWS --> Regional Lb
+   -- GCP --> global LB
+

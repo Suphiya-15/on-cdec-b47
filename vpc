@@ -1,0 +1,34 @@
+                                          VPC Networks
+                                                ------> VPC in AWS
+
+--Differences between AWS VPC and GCP VPC
+
+1. Scope of VPC: 
+AWS : regional
+GCP : Global
+
+2.subnet design:
+AWS : zonal 
+GCP : regional
+
+3. IP range:
+AWS : you define the CIDR ----> vpc --> 10.0.0.0/16   10.1.0.0/24
+GCP : works on mode --> Auto and Custome
+
+4. Internet access:
+AWS: igw, nat gateway
+GCP : cloud NAT, igw 
+
+5.security:
+AWS : SG, NACL 
+GCP : Firewall                        tags: https 
+
+
+                            **Cloud SQL***
+
+--Cloud sql is fully managed database service provided by GCP.
+--suppported engines:
+1. Mysql
+2. PostgreSql
+3. SQL server
+

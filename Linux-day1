@@ -1,0 +1,155 @@
+
+
+Windows                                   Linux
+files                                    files
+folders                                  directory
+software                                 package
+administartor                            root user / super user
+
+Labex Terminal:
+
+username  @  hostname :~  $
+   1            2      3   4
+
+   1: Loggedin User name
+   2: Machine name
+   3: Folder name
+   4: User Type
+   --> $ = Normal user  # = Root user /administartor
+
+                 *** Linux Basic Commands ***
+    
+    1. sudo su -  : (Super User DO) (Switch User) 
+    ---> this command is used to login into root user account
+    syntax: sudo su -
+
+    2. pwd : (Present Working Directory)
+    --> display current working directory
+    syntax: pwd
+
+    3. ls : (list)
+    --> used to display contents of ditrectory/folder
+    syntax: ls
+
+    4. mkdir : (make directory)
+    --> is used to create folder/dircetory.
+    i] syntax: mkdir <folder_name>
+       eg: mkdir  demo
+   
+   ii]syntax: mkdir <folder_name1> <folder_name2> <folder_name3> 
+      eg: mkdir folder1 folder2 folder3
+
+   iii]syntax: mkdir -p <parent_folder/child_folder>
+   ---> used to create nested directories. here -p means parent
+      eg: mkdir -p prod/dev
+
+   5. rmdir : (remove directory)
+    ---> to remove empty directories.
+    syntax:  rmdir <folder_name>
+      eg: rmdir  demo
+
+   6. rm -rf : 
+    --> to delete non empty directory.
+   here,
+   rm = remove
+   -r = recursive
+   -f = forcefully
+   
+   -r tells rm to recursively delete the directory and all its contents.
+
+   "recursively" means that the command will operate on a directory and all subdirectories and files.
+
+    **commands to create files in linux**
+
+    7. touch :
+   --> is used to create empty files.
+   syntax: touch <file_name>
+   eg: touch demo.txt
+
+   8. cat > :
+   --> this command is used to create file and write contents to it.
+   i] syntax:  cat > <file_name>
+   eg:  cat > demo.txt
+   --> to save and exit use ctrl + d 
+
+   ii] syntax: cat >> <file_name>
+       eg:  cat >> demo.txt
+       ---> used to append data (add data) into file.
+
+   9. cat :
+   --> this commmand is used to display file contents.
+   syntax: cat <file_name>
+   eg:  cat demo.txt
+
+   10. cd : (Change Directory)
+   --> this command is used to move in between directory.
+   syntax: cd <directory_name>
+   eg: cd folder1
+
+   11. cd .. :
+   --> this command is used to take you in previous directory
+   syntax: cd ..
+
+   12. rm : (remove)
+   --> used to delete/remove files.
+   syntax: rm <file_name>
+   eg:  rm demo.txt
+
+   13. cp : (copy)
+   --> used to copy files 
+   i] copy to folder
+   syntax:  cp <file_name> < folder_name>
+   eg:  cp demo.txt  folder1
+
+   ii] copy to file
+   syntax: cp <source_file_name> <dest_file_name>
+   eg: cp demo.txt  file.txt
+
+   14. cp -r :
+   --> to copy folder
+   syntax: cp -r <source_folder_name> <dest_folder_name>
+   eg: cp -r folder test_folder
+
+   15. mv : (move)
+   --> mv has two use cases
+   i] move file/folder:
+   --> it is used to move files and directories from one location to another
+   syntax: mv <source> <dest_folder_name>
+   eg: mv file.txt folder
+
+   ii] to rename file
+   syntax: mv <old_file_name> <new_file_name>
+   eg: mv demo  demo.txt
+
+   16. head :
+   --> this command is used to display the first few lines (10 lines) of the file.
+   syntax: head <file_name>
+   eg: head myfile.txt
+   syntax: head -n <file_name>
+   eg: head -5 myfile.txt
+   --> to display 5 lines of file
+
+   17. tail :
+   --> this command is used to display last few lines (10 lines) of the file.
+   syntax: tail <file_name>
+   eg: tail myfile.txt
+
+   18. sort : 
+   -->used to sort file
+   syntax: sort <file_name>
+   eg: sort names.txt
+
+   19. uniq :
+   --> used to delete all adjacent duplicate lines in a file
+   syntax: uniq <file_name>
+   eg: uniq file.txt
+
+   20. clear / ctrl + l :
+   ---> used to clear screen.
+   syntax: clear
+       OR
+   use ctrl + l
+
+
+
+  

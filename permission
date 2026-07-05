@@ -1,0 +1,107 @@
+             **Permission**
+
+-permissions are assigened to files and directories.
+
+ll <file_name>
+ls -l <file_name>
+ls -ltr <file_name>
+----> used to display file permission
+ll demo
+ls -l demo
+ls -ltr demo
+
+- rw- r-- r-- 1 root root 0  jul 3 11:14  demo
+1  2   3   4  5  6    7   8      9        10
+
+1: type of file
+2: owner permission
+3: group premission
+4: other permission
+5: link count
+6: file owner
+7: group owner
+8: file size
+9: file creation date and time
+10: file name 
+
+permission: 
+1. read = r
+2. write = w
+3. execute = x
+ 
+ rwx 
+
+ types of permission:
+ 1. Symbolic representation (+,-,=) 
+ 2. octal representation : number representation
+
+ 1. symbolic representation:
+ owner = u (user)
+ group = g 
+ other = o 
+ all = a / ugo
+
+ + : add/append permission
+ - : remove permission
+ = : set the permisssion
+
+ chmod u-r, u-w, u-rw, u-x, 
+       u-rx, u-xw , u-rwx
+       u+r,u+w, u+rwx, u=r
+       u=w..........  <file_name>
+
+       g
+       o
+       ug
+       uo
+       go
+       ugo/a
+
+chmod u=- demo
+---
+chmod u+r demo
+r--
+chmod u+w demo
+rw-
+chmod u-rw demo
+---
+chmod u=rwx demo
+rwx
+
+2. number representation:
+r = 4
+w = 2
+x = 1
+
+rw-r-xr--   ----------->  chmod 654 demo
+
+owner: rw-
+     : r + w + -
+     : 4 + 2 + 0
+     : 6
+group: r-x
+     : r + - + x
+     : 4 + 0 + 1
+     : 5
+others: r + - + -
+      : 4 + 0 + 0
+      : 4
+
+chmod 000 demo 
+chmod 400 demo
+chmod 777 demo 
+chmod 455 demo
+chmod 754 demo
+chmod 644 demo
+
+
+ls -ltd <dircetory_name>
+-->to display directory permission
+ls -ltd folder
+
+
+
+
+
+
+
