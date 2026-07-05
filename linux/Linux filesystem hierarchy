@@ -1,0 +1,33 @@
+
+**Linux Filesystem Hierarchy**
+
+/ ---> top most directory in linux
+  ---> everything is mounted under /
+  
+
+  windows                                                Linux
+
+  C:\                                                     /
+
+  configuration files stored in                          /etc
+  C:\windows
+
+  home directory for user                                /home
+  C:\users
+
+  all installed application/software                     /usr  (Unix System Resource)
+  files stored in 
+  C:\program files                                        OR
+
+                                                         /opt
+
+ temporary files stored in
+ C:\temp                                                 /tmp
+
+ /root : home directory for root user
+ /boot : It contains all boot loader files
+ POST method : Power On Self Test
+ /dev : (device) all essencial device file information stored here
+ /var : (Variable data) : store system logs 
+ /media : mounted point for for removable media
+ /mnt : mounted directory for file
