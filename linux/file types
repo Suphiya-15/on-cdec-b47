@@ -1,0 +1,31 @@
+
+**file types in linux**
+1. regular files (-)
+--these files save commanly used data such as text,script,images etc
+
+2. directory files (d)
+--these files are also called folder/directory. and are used to organize files and other subfolder/dir
+
+3. Special files :
+i] block file (b)
+ii]char file (c)
+iii] link file (l)<------
+iv] socket file (s)
+v] pipe file (p)
+
+--> normal users mostly work with normal files, directories and link files.
+-->you do not manually work with other files linux itself uses them internally.
+-->the terminal(bash/zsh) uses a clor scheme called LS_COLORS to help you
+visually identify file types easily.
+white = normal file
+blue = directory
+green = executable file
+cyan = link file
+yellow background = block/char file
+red = archive/ compressed
+pink/purple = image
+
+file <file_name>
+--> to identify file type
+file demo
+

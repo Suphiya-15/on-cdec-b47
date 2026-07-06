@@ -88,16 +88,18 @@ others: r + - + -
       : 4
 
 chmod 000 demo 
-chmod 400 demo
-chmod 777 demo 
-chmod 455 demo
-chmod 754 demo
-chmod 644 demo
+chmod 400 demo----> r--------
+chmod 777 demo----> rwxrwxrwx
+chmod 455 demo----> r--r-xr-x
+chmod 754 demo----> rwxr-xr--
+chmod 644 demo----> rw-r--r--
 
 
 ls -ltd <dircetory_name>
 -->to display directory permission
 ls -ltd folder
+
+
 
 
 
