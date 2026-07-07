@@ -1,0 +1,38 @@
+**Link Count**
+--> A link count in linux shows how many names point to the same file.
+--> link count of a file tells the total no of links a file has.
+
+-types of links:
+1. Hard Link
+2. Soft Link
+
+1. Hard link: (different names for same file)
+i] These links have actual file contents.
+syntax:
+       ln <original-file> <link_name>
+    eg:
+       ln  demo  hard-link 
+ii] hard link file is assigned the same inode value as the original file so they refer same physical location
+*inode value*:
+-An inode no is unique identification number assigened to every file in linux file system.
+-an inode stores metadata about a file such as file type, permission, owner, group, file size etc.
+syntax:
+        ls -li <file_name>
+
+iii] Removing link just reduce the link count, but doesn't affect other links
+iv] deleteing original file will not affect other links.
+
+2. soft link: (it is a pointer to the original file)
+i] these links contains the path for original file.
+syntax:  
+     ln -s <original-file> <link-name>
+eg:
+     ln -s demo softlink
+
+ii] soft link is assigened different inode number than original file.
+iv] deleting original file the soft link becomes dangling link which points to the non existing file.
+
+file link count = 1
+dir link count = 2 <----- why??
+
+
