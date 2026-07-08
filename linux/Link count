@@ -35,4 +35,8 @@ iv] deleting original file the soft link becomes dangling link which points to t
 file link count = 1
 dir link count = 2 <----- why??
 
+/home/priyanka ----> 
+/home/suphiya ---> 
+su - priyanka 
+
 
