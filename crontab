@@ -1,0 +1,55 @@
+
+**Crontab** : Cron Table
+--> it is a linux utility used to schedule commands or scripts(job/task) to run automatically at a specific time.
+
+syntax:
+*  *  *  *  *  commmand
+1  2  3  4  5 
+
+1: Minute (0-59)
+2: Hour (0-23)
+3: Day of month (1-31)
+4: Month (1-12)
+5: Day of week (0-7) 0 or 7=sunday
+
+crontab -e : edit
+--> used to edit or set cron jobs
+
+crontab -l : list
+--> used to list all cron jobs
+
+crontab -r : remove
+--> used to delete/remove cron jobs
+
+cron : it is background service
+--> this service executes scheduled jobs.
+
+crontab: files where you define schedule and commands
+
+find command:
+--> used to find files and directories in linux based on different  conditions like name, permission, size, user etc
+
+synatx:
+find <path> <condition> <action>
+here,
+path = location /=root /etc /mnt
+condition= by name, by permission
+action = what to do after finding the file.
+
+condition:
+1. -name
+2. -perm
+3. -size
+4. -uid
+5. -gid
+6. -mtime : modification time
+eg:
+-mtime -2 : files modified within last 2 days
+-mtime 2 : files modified between 2 and 3 days
+-mtime +2 : files modified more thab 2 days ago
+
+action:
+-delete: to delete selceted files
+
+eg:
+find / -mtime +2 -delete

@@ -79,7 +79,7 @@ options:
 gzip: -z
 extension: .gz
 
-bzip2: j
+bzip2: -j
 extension: .bz2
 
 xz: -J
