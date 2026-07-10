@@ -1,0 +1,22 @@
+-there are some commands used to monitor linux system.
+1. df -h: Disk Filesystem 
+--> shows disk usage of mounted filesystem.
+-h means human readable (MB, GB)
+-->checking the entire hard disk
+
+du -sh : Disk usage
+--> size of a specific directory/file.
+--> checking the size od one folder/file
+
+2. free -h :
+--> shows RAM memory usage
+
+3. lscpu:
+--> showa CPU harware information
+
+4. uptime :
+--> shows
+- current time
+- how long the server has been running
+- number of logged in users
+- CPU load avg

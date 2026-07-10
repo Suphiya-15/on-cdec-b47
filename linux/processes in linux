@@ -1,0 +1,29 @@
+
+process: 
+--> A process is a program in execution
+--> it is simply a running instance of a program
+--> A process is simply a program that is currently running
+
+
+-types of processes:
+1. foreground process:
+--> A foreground process runs in the terminal and uses the terminal until it finishes.
+--> you can not use the terminal for another command while it is running.
+eg: gzip, find, mkdir
+
+2. background process:
+--> these processes runs in a background without blocking your terminal.
+--> the terminal is free
+--> you can continue typing other commands
+
+3. daemon process:
+--> A daemon process is a special background process that starts automatically
+and keeps running to provide service.
+eg: initd, sshd
+
+-Runnning a proccess in background
+--> use the & symbol to start a process in the background
+eg:
+command &
+sleep 100&
+sleep 60&
