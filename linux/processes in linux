@@ -61,3 +61,58 @@ eg:
 parent process
 child process
 
+parent process:
+--> A process that stsrts or creates a new process is called the parent process.
+eg:
+--> the terminal starts the bash shell.
+
+child process:
+--> Achild process is the process that is created by the parent process.
+--> when you type ls command. bash creates a new process to run the ls command.
+so here
+bash is parent process
+ls is child process
+
+**Main Process states**
+1. R = running
+2. S = sleeping
+-->process is waiting for something.(keyboard input, file, network) 
+3. T = stopped
+4. Z = Zombie
+-->process has finished execution, but its parent has not yet collected its exit status
+-->A child process has ended but the parent has not acknowledged it yet.
+
+**process Priority**
+--> nice and renice value/commands are used to manage process priorities.
+-20 = highest Priority
+20 = lowest priority 
+
+-20 --> very high priority (gets CPU sooner)
+19 --> low priority (waits longer)
+
+sleep 60 --> -15
+sleep 100 --> 2
+
+ps -l pid
+--> used to check process nice value
+
+renice -n <nice_value> <pid>
+--> to change process priority
+here,
+-n : specifies the nice value
+<nice value> : the priority adjusment (from -20 to 20)
+<pid> : running process id
+
+nice -n <nice_value> <command>
+--> to set process priority
+
+kill:
+--> used to terminate a process manually
+syntax:
+kill -9 <pid>
+here,
+-9 = forecfully terminate process
+eg:
+kill -9 2600
+
+
