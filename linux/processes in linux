@@ -27,3 +27,37 @@ eg:
 command &
 sleep 100&
 sleep 60&
+
+jobs: 
+--> shows jobs started from the current terminal
+--> used to manage background and stopped jobs
+syntax: jobs
+
+ps:
+--> shows all running processes
+--> used to check process details
+--> shows system processes, deamon processes and user processes
+syntax:
+ps
+ps -e: (e means every process)
+ps -aux:
+here
+a = process of all users
+u = user oriented format(shows user, cpu etc)
+x = all processes
+
+top: 
+--> shows all system processes live (real time).
+syntax: top
+
+tree:
+--> display files and directories in a tree like structure
+syntax: tree
+
+pstree:
+-->process tree is a way to see which process started another process.
+-->it is a hierarchical view of running process.
+eg:
+parent process
+child process
+
