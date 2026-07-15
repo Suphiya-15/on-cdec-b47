@@ -1,0 +1,64 @@
+               **Networking**
+
+- A network is a group of two or more devices connected togather so they can communicate.
+
+-Types of network:
+1. LAN : Local Area Network
+2. MAN : Metropolitan Area Network 
+3. WAN : Wide Area Network
+
+-Network Devices
+1. Router
+2. Switches
+3. Firewall
+4. Hubs
+5. Modem
+6. NIC
+
+-Network Protocols:
+--> A Protocol is a set of rules that tells devices how to communicate over network.
+-common protocols:
+1. HTTP 
+2. HTTPS
+3. FTP
+4. SSH
+5. RDP
+6. DNS
+7. DHCP
+
+-IP address
+--> an IP address is a unique number assigned to every device connected
+to a network  
+eg: 192.178.23.56
+
+**basic linux networking commands**
+
+1. hostname:
+--> display machine name
+syntax: hostname
+
+ii] hostname -I
+--> display system's IP address
+
+2. ping :
+--> checks whether another device or website is reachable
+syntax: ping <destination>
+eg: ping google.com   
+eg: ping 172.15.20.19
+
+3. ifconfig: interface configurator
+--> it is used to show the network interface.
+syntax: ifconfig
+
+syntax: ip a / ip addr / ip address show 
+
+4. curl: (Client URL)
+--> test a website or API and displays the response
+syntax: curl <url>
+eg: curl google.com
+
+5. wget:
+-downloads files from the internet
+syntax: wget <url>
+
+
