@@ -1,0 +1,34 @@
+**Cloud Computing??**
+-->cloud computing is the ondemand delivery of compute power, database, storage, security 
+and all other IT resources through cloud provider via Internet.
+
+**Services in Cloud**
+1. IaaS: Infrastructure as a Service
+2. PaaS: Platform as a Service
+3. SaaS: Software as a Service
+
+**Deployment model of cloud/ cloud types**
+1. Public Cloud
+2. Private Cloud: Enterprise cloud                   IBM Cloud
+3. Hybrid Cloud
+
+
+**Virtualisation??**
+-->virtualisation is a technology that allow us to create multiple virtual computers
+on a single physical server. 
+AWS: Para virtulization
+     HVM
+
+**Hypervisor**
+-->A hypervisor is a software that creates and manages virtual machines.
+-->It sits between the physical hardware and the virtual machines.
+AWS: XEN --> old 
+Nitro System --> New
+
+                               **AWS**
+                             Amazon Web Services
+                                 ------------------> Amazon
+
+ --> AWS is cloud computing platform that offers ondemand delivery of compute power,database, storage
+ and many other cloud services over the internet on a pay as you go model. 
+
