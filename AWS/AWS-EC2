@@ -1,0 +1,32 @@
+                                 **EC2**
+                            Elastic Compute Cloud
+
+Region: 
+--> A region is geographical area where Amazon has data centers.
+--> each region contains one or more datacenters that are close to each other and connected with high speed networks.
+eg: ap-south-1, us-east-1
+
+Availability Zone:
+--> an AZ is one or more physical separate data centers within an AWS region.
+such as ap-south-1a
+ap-south-1b
+
+----> using ec2 service you can create virtual machine in cloud.
+--> server / node / device / VM / virtual machine / instance
+
+**Steps to create instance**
+1. tags: metadata about instance
+2. AMI : Amazon Machine Image 
+---> it is a template which consist OS and other software that are required to launch our instance.
+3. Instance type: RAM + CPU
+4. Security group/ firewall: 
+--> A security group is a set of firewall rules that control the traffic for your instance.
+5. Storage: HDD, SSD
+6. key pair:
+--> You can use a key pair to securely connect to your instance
+1. public key ---> kept with AWS
+2. Private key --> downloaded by user
+
+hw:
+1. create windows instance
+
