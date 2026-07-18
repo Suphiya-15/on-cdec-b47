@@ -1,0 +1,49 @@
+1. what is Linux?
+2. what is the kernel?
+3. what is shell?
+4. what is inode?
+5. soft link vs hard link
+6. active processes in linux??
+7. kill a process?
+8. what is the root user in linux?
+9. what is process?
+10. task schedular??
+11. ls -ltr
+12. how to find files larger than 10MB?
+--> find / -size +10M
+13. how to find files modified in the last 24 hours
+--> find / -mtime -1 
+14. how do you indentify the process consuming the most CPU?
+15. how do you check memory usage:
+--> free -h
+16. how do you check disk usage
+--> df -h
+17. how do you check folder size
+--> du -sh
+18. what does uptime command show?
+19. cd vs pwd
+20. how do you change file ownership?
+21. network connectivity?
+22. /etc/passwd
+23. tail command
+24. explain vim editor?
+25. your production server reports 100% disk usage. what willl you do?
+
+Package Manager:
+--> A package manager is a tool that installs, updates, removes and manages software packages automatically
+eg: yum, apt, etc
+
+1. yum: RHEL, CentOS, Fedora, Amazon linux
+eg: yum install <package name>
+eg: yum remove <package name>
+
+2. apt: ubuntu, Dabian
+eg: apt install <package name>
+
+3. zypper: SUSE
+4. Brew: MAC OS
+
+yum install cronie -y ---> linux
+
+yum install httpd 
+apt install apache2
