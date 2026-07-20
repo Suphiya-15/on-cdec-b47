@@ -30,3 +30,44 @@ ap-south-1b
 hw:
 1. create windows instance
 
+**Status check**
+-->EC2 status checks are health checks performed by AWS to verify whether you ec2 instance and AWS infra are working correctly.
+
+--types  of status checks:
+1. System status check: 
+--> this checks the AWS infra like physical server, AWS hypervisior, network connectivity
+
+2. Instance Status Check:
+--> this checks EC2 OS functioning
+
+3. EBS Status Check
+--> Storage connectivity
+
+1/2 checkpass :
+issue: problem is with system(AWS Infra) not your OS
+solution: reboot instance
+
+0/2 checkpass : 
+issue: issue with AWS infra and instance OS
+solution: stop and start instance
+
+3/3 check pass:
+--> all OK
+
+**Security Group**
+--> A security group is a set of firewall rules that control the traffic for your instance.
+
+security:
+1. Inbound rule : incoming traffic
+2. outbound rule : outgoing traffic
+
+SSH: Secure SHell
+--> this protocol is used to login to linux server remotely.
+--> works on port number 22
+
+RDP: Remote Desktop Protocol
+--> this protocol is used to login to windows server remotely.
+--> works on port no 3389
+
+
+
