@@ -69,5 +69,59 @@ RDP: Remote Desktop Protocol
 --> this protocol is used to login to windows server remotely.
 --> works on port no 3389
 
+**steps to connect windows instance**:
+1. create windows instance
+2. connect 
+3. go to RDP client
+4. download remote desktop file
+5. get password
+6. upload private key which is associate to this instance
+7. decrypt it
+8. copy password
+9. open downloaded remote desktop file and click on connect
+10. paste it into downloaded remote desktop file
+11. ok
+
+**Web server**:
+--> A web server is a computer which store web pages.
+--> A web server recives request from users and sends web pages, images or other website contents.
+popular web servers:
+1. apache web server
+2. nginx web server
+3. Microsoft IIS
+
+server ---> install apache web server -----> web server
+
+HTTP: HyperText Transfer Protocol: 
+--> works on port no 80
+--> it is a communication protocol that defines how a web browser and a web server exchange information
+OR
+-->HTTP is a set of rules used to transfer web pages between browser and a web server
+
+HTTPS: Secure
+--> works on port no 443
+
+**steps to host webpage on webserver using EC2 service**:
+1. create one linux instance
+--> allow ssh, http and https protocol
+
+2. connect
+sudo su -
+yum install httpd -y                        yum install nginx -y
+systemctl status httpd
+systemctl start httpd
+echo "<h1>Comment</h1>" >/var/www/html/index.html              /usr/share/nginx/html/index.html
+
+3. select public ip of instance
+4. go to web browser and paste public ip 
+5. check your website
+
+hw:
+1. why index.html????
+2. install nginx web server
+
+
+
+
 
 
