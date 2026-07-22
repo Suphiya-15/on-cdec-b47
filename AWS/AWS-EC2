@@ -121,6 +121,50 @@ hw:
 2. install nginx web server
 
 
+**Instance Purchasing Options:**
+1. On-demand Instance:
+--> pay for what you use:
+----> Linux or windows: billing per second, after the first minute. 40sec-->1min 70sec--> 1 min 10sec
+---->all other OS: billing per hour
+--> has the heighest cost but no upfront payment
+--> No long term commitment
+--> Recommend for short term workload.
+
+2. Reserved Instance:
+--> up to 75% discount compared to on demand
+-->Reservation period: 1 year or 3 years
+--> payment options: 1. No upfront 2.Partial upfront 3. full upfront
+
+3. Spot Instance:
+--> can get a discont up to 90% compared to on demand
+--> these are unused ec2 instances.
+--> the MOST cost efficient instance in AWS.
+--> not suitable for critical jobs or database
+--> useful for workload that are resiliences to failure
+1. testing
+2. data analysis
+3. image processing
+4. any distributed workload
+
+4. Dedicated host:
+--> A physical server with EC2 instance capacity fully dedicated to your use.
+--> The MOST expensive option
+
+5. EC2 Saving plans: 
+--> commit to a certain type of usage($10/hour for 1 year or 3 years)
+
+6. Capacity Reservation:
+-->reserve on demand instance capacity in a spesific AZ for any duration
+
+**Instance types Family**
+1. General purpose
+2. Compute optimized
+3. Memory optimized
+4. Accelarated computing
+5. HPC
+6. Storage optimized
+
+
 
 
 
